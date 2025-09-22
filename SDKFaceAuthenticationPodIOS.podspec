@@ -26,8 +26,8 @@ Pod::Spec.new do |spec|
                        DESC
   spec.platform = :ios
   spec.ios.deployment_target = "12.0"
-  spec.source            = { :http => 'https://github.com/sonuos1501/SDKFaceAuthenticationPodIOS/releases/download/1.0.0/SDKFaceAuthenticationPodIOS.zip' }
-  spec.vendored_frameworks = 'SDKFaceAuthenticationPodIOS/SDKFaceAuthenticationPodIOS.xcframework'
+  spec.source            = { :http => 'https://github.com/sonuos1501/SDKFaceAuthenticationPodIOS/releases/download/1.0.0/ekyc_ios_sdk.zip' }
+  spec.vendored_frameworks = 'ekyc_ios_sdk.xcframework'
   spec.dependency "TensorFlowLiteSwift", "2.13.0"
   spec.dependency "GoogleMLKit/FaceDetection", "6.0.0"
 
