@@ -16,28 +16,24 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ekyc_ios_sdk"
-  spec.version      = "1.0.3"
-  spec.summary      = "A short description of SDKFaceAuthenticationPodIOS."
-  spec.homepage     = "https://github.com/sonuos1501/SDKFaceAuthenticationPodIOS"
-  spec.author       = { 'sonuostt' => 'sonuospt@gmail.com' }
-  spec.license      = "MIT"
+  spec.version      = "1.0.4"
+  spec.summary      = "Face authentication SDK for iOS (device only)."
   spec.description  = <<-DESC
-  SDKFaceAuthenticationPodIOS is a library for ...
-                       DESC
-  spec.platform = :ios
-  spec.ios.deployment_target = "12.0"
-  spec.source = { 
-    :http => 'https://github.com/sonuos1501/SDKFaceAuthenticationPodIOS/releases/download/1.0.3/ekyc_ios_sdk.xcframework.zip'
-  }
+  ekyc_ios_sdk provides face authentication with liveness detection, only for physical devices.
+  DESC
+  spec.homepage     = "https://github.com/sonuos1501/SDKFaceAuthenticationPodIOS"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.platform     = :ios, "12.0"
+  spec.source       = { :http => "https://github.com/sonuos1501/SDKFaceAuthenticationPodIOS/releases/download/1.0.4/ekyc_ios_sdk.xcframework.zip" }
   spec.vendored_frameworks = 'ekyc_ios_sdk.xcframework'
+  spec.swift_version = "5.0"
+
+  # loại bỏ arm64 simulator để build device-only
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig   = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
   spec.dependency "TensorFlowLiteSwift", "2.13.0"
   spec.dependency "GoogleMLKit/FaceDetection", "6.0.0"
-
-  spec.swift_version = "5.0"
-  spec.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 
 end
