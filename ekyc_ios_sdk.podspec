@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "SDKFaceAuthenticationPodIOS"
-  spec.version      = "1.0.0"
+  spec.name         = "ekyc_ios_sdk"
+  spec.version      = "1.0.1"
   spec.summary      = "A short description of SDKFaceAuthenticationPodIOS."
   spec.homepage     = "https://github.com/sonuos1501/SDKFaceAuthenticationPodIOS"
   spec.author       = { 'sonuostt' => 'sonuospt@gmail.com' }

@@ -1,1 +1,1 @@
-pod trunk push SDKFaceAuthenticationPodIOS.podspec --allow-warnings --skip-import-validation
+pod trunk push ekyc_ios_sdk.podspec --allow-warnings --skip-import-validation
