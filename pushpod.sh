@@ -1,0 +1,1 @@
+pod trunk push SDKFaceAuthenticationPodIOS.podspec --allow-warnings --skip-import-validation
