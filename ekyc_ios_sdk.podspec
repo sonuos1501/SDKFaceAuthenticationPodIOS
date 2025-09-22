@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ekyc_ios_sdk"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "Face authentication SDK for iOS (device only)."
   spec.description  = <<-DESC
   ekyc_ios_sdk provides face authentication with liveness detection, only for physical devices.
@@ -24,7 +24,8 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/sonuos1501/SDKFaceAuthenticationPodIOS"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.platform     = :ios, "12.0"
-  spec.source       = { :http => "https://github.com/sonuos1501/SDKFaceAuthenticationPodIOS/releases/download/1.0.4/ekyc_ios_sdk.xcframework.zip" }
+  spec.author       = { 'sonuostt' => 'sonuospt@gmail.com' }
+  spec.source       = { :http => "https://github.com/sonuos1501/SDKFaceAuthenticationPodIOS/releases/download/1.0.5/ekyc_ios_sdk.xcframework.zip" }
   spec.vendored_frameworks = 'ekyc_ios_sdk.xcframework'
   spec.swift_version = "5.0"
 
